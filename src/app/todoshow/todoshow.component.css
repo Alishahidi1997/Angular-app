@@ -1,0 +1,30 @@
+#test {
+  float: left;
+  width: 100%;
+  margin: 10px; }
+#test li {
+  position: relative;
+  display: block;
+  margin: 15px 0px;
+  background-color: cornflowerblue;
+  padding: 20px 30px;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s; }
+#test li .header {
+  text-align: center; }
+#test li .list {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  cursor: pointer; }
+#test li:hover {
+  background-color: red;
+  box-shadow: 10px 10px #adb5bd;
+  transition: 0.5s; }
+#test span {
+  font-size: 30px; }
+#test hr {
+  background-color: white;
+  color: white; }

@@ -1,0 +1,7 @@
+<ul id="test">
+  <li *ngFor="let arr of array "><h3 class="header">{{arr.title | upfirst}}</h3>
+    <hr>
+    <p>{{arr.desc}}</p>
+    <span class="list"  (click)="delete(arr.id)">&times;</span>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<div id="form" class="header">
+  <h3 class="addtolist">Add to list</h3>
+  <p *ngIf="focused && title !==''" >Title:</p>
+  <input type="text" id="title" (focus)="focused = true" class="input" placeholder="Title..." [value]="title" maxlength="40" [(ngModel)]="title">
+  <p *ngIf="texta && desc !==''">Description:</p>
+  <textarea  id="desc" placeholder="Your description" (focus)="texta = true" [value]="desc" [(ngModel)] ="desc"></textarea>
+  <p>Insert in : </p>
+  <select id="order" [(ngModel)] ="order" [value]="order">
+    <option >1</option>
+    <option *ngFor ="let num of nums">{{num}}</option>
+  </select>
+  <button (click)="add()" >Add</button>
+</div>
