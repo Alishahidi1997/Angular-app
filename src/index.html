@@ -2,13 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>FirstPorject</title>
+  <title>FirstP</title>
   <base href="/">
-
+  <meta name="theme-color" content="#673ab7">
+  <link rel="mannifest" href="manifest.json" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="Author: Ali shahidi,
+    Illustrator: P. Picture, Category: building, Price: $17.99,
+    Length: 784 pages">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+    body { background-color: #ffffff;  }
+
+    h1 {
+      font: 2em 'Roboto', sans-serif;
+      margin-bottom: 40px;
+    }
+
+    #loading {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+      -webkit-animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { -webkit-transform: rotate(360deg); }
+    }
+    @-webkit-keyframes spin {
+      to { -webkit-transform: rotate(360deg); }
+    }
+  </style>
+
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1976d2">
 </head>
-<body>
-  <app-root></app-root>
+<body >
+  <app-root>
+    <nav
+      style="background-color: #673ab7; height: 56px; width: 100%">
+    </nav>
+    <div id="loading"></div>
+  </app-root>
+  <noscript>
+    <h3 style="color: #673ab7; font-family: Helvetica; margin: 2rem;">
+      Sorry, but app is not available without javascript
+    </h3>
+  </noscript>
 </body>
 </html>
