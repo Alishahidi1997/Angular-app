@@ -1,0 +1,15 @@
+html, body{
+  direction: $dir-mode-align;
+  text-align: $align;
+
+}
+
+body.rtl{
+
+}
+
+.rtl{
+  .myclass{
+    ali
+  }
+}
